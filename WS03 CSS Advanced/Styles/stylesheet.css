@@ -67,11 +67,11 @@ input[type="submit"]:hover {
     
 }
 @keyframes move{
-    form {
+    from {
         left: 0px;
     }
     to {
-        left: 100px;
+        left: 500px;
     }
 }
 
