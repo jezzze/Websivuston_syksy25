@@ -3,11 +3,32 @@
     <head> 
         <title>Maailman paras nettisivu</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="Styles/stylesheet.css">
+        <style>
+            h2 {
+                color: red;
+            }
+            p {
+                color:blue;
+              }
+        body {
+                background-color: rgba(62, 118, 124, 0.353);
+            }
+
+            h1 {
+                font-size: 2em;
+                }
+        </style>
     </head>
     <body>
         <h1>Jesse Mitronen</h1>
         <p>Maalilman paras koodari</p>
-        <img src="images/Koira.jpeg" alt="Jessen koira nimeltä benny" style="width:170px">
+        <button class="transition-button">Hover me</button>
+      <div class="animation-box"></div>
+        <img src="images/Koira.jpeg" alt="koira nimeltä benny" style="width:170px"class="filter-image">
+        <blockquote class="quote">
+        Olen paras koodari
+      </blockquote>
         <h2>Asiat joista tykkään</h2>
         <ol>
         <li>Video pelit</li>
@@ -15,7 +36,7 @@
         <li>Jääkiekko</li>
         </ol>
         <h2>Koiran lempi asioita</h2>
-        <ul>
+        <ul class="pseudo-list">
         <li>Lenkkeily</li>
         <li>Pehmolelun pureminen</li>
         <li>Ikkunasta ulos katsominen</li>
@@ -45,6 +66,8 @@
             <label for="email">email:</label>
             <input type="email" id="email" name="email"><br></br>
             <input type="submit" value="submit">
+             
         </form>
+      
     </body>
 </html>
