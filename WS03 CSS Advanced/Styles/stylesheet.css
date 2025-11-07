@@ -67,9 +67,8 @@ input[type="submit"]:hover {
     object-fit: cover; 
 }
 .animation-box {
-        width: 200px;
-        height: 200px;
-       /* background-color: lightgreen;*/
+        width: 150px;
+        height: 150px;
         position: relative;
         animation: move 2s infinite alternate;
     
