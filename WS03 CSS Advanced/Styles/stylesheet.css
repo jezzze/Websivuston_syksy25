@@ -74,9 +74,13 @@ input[type="submit"]:hover {
 @keyframes move{
     from {
         left: 0px;
+        /*vähä lisäilen animaatioon jotai hauskaa*/
+        transform: rotate(0deg);
     }
     to {
         left: 500px;
+        /*tässä laitan animaation pyörii*/
+        transform: rotate(360deg);
     }
 }
 
