@@ -1,11 +1,95 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS04 Layout</title>
-</head>
-<body>
-    <h1>WS04 Layout</h1>
-</body>
+<html>
+  <head>
+    <title>Maailman paras nettisivu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <style>
+      h2 {
+        background-image: linear-gradient(to right, #37ff00, #0033ff 50%);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        color: blue;
+      }
+      body {
+        background-color: rgba(62, 118, 124, 0.353);
+      }
+
+      h1 {
+        background-image: linear-gradient(to right, #37ff00, #0033ff 50%);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jesse Mitronen</h1>
+    <p>Maalilman paras koodari</p>
+    <button class="transition-button">Hover me</button>
+    <div class="animation-box">
+      <img
+        src="images/koira.jpeg"
+        alt="koira nimeltä benny"
+        class="filter-image"
+      />
+    </div>
+    <img
+      src="images/koira.jpeg"
+      alt="koira nimeltä benny"
+      style="width: 170px"
+      class="filter-image"
+    />
+    <blockquote class="quote">Olen paras koodari</blockquote>
+    <h2>Asiat joista tykkään</h2>
+    <ol class="pseudo-list2">
+      <li>1. Video pelit</li>
+      <li>2. Moottoriurheilu</li>
+      <li>3. Jääkiekko</li>
+    </ol>
+    <h2>Koiran lempi asioita</h2>
+    <ul class="pseudo-list">
+      <li>Lenkkeily</li>
+      <li>Pehmolelun pureminen</li>
+      <li>Ikkunasta ulos katsominen</li>
+    </ul>
+    <a href="https://github.com/jezzze">--->Paras linkki<---</a>
+    <br />
+    <table>
+      <tr>
+        <th>Tämän Hetkisiä kursseja</th>
+        <th>Selitys</th>
+      </tr>
+      <tr>
+        <td>Websivuston kehittäminen,</td>
+        <td>nettisivujen tekemistä</td>
+      </tr>
+      <tr>
+        <td>Professional Communication in English,</td>
+        <td>Englannin kielen oppimista</td>
+      </tr>
+      <tr>
+        <td>Liiketoimintaympäristö,</td>
+        <td>liiketoiminnasta oppimista</td>
+      </tr>
+    </table>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
 </html>
