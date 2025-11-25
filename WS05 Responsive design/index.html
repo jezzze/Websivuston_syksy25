@@ -1,11 +1,157 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <title>Maailman paras nettisivu</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS05 Responsive design</title>
-</head>
-<body>
-    <h1>WS05 Responsive design</h1>
-</body>
+    <link rel="stylesheet" href="Styles/stylesheet.css">
+    <style>
+      h2 {
+        background-image: linear-gradient(to right, #37ff00, #0033ff 50%);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        color: rgb(0, 0, 0);
+      }
+      body {
+        background-color: rgba(62, 118, 124, 0.353);
+      }
+
+      h1 {
+        background-image: linear-gradient(to right, #37ff00, #0033ff 50%);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <header> 
+    <h1>Jesse Mitronen</h1>
+    <nav>
+      <ul>
+      <nav> 
+        <ul>
+         <li class="list-about"><a href="#about">About</a></li>
+
+        <li class="list-service"><a href="#services">Services</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+      </ul>
+    </nav>
+    <nav class="responsive-nav">
+        <button class="menu-toggle"></button>
+        <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Contact</li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>This is a paragraph about me.</p>
+    </section>
+  </main>
+
+
+  <body>
+    
+    <p>Maalilman paras koodari</p>
+    <button class="transition-button">Hover me</button>
+    <div class="animation-box">
+      <img
+        src="images/koira.jpeg"
+        alt="koira nimeltä benny"
+        class="filter-image"
+      />
+    </div>
+    <img
+      src="images/koira.jpeg"
+      alt="koira nimeltä benny"
+      style="width: 170px"
+      class="filter-image"
+    />
+    <blockquote class="quote">Olen paras koodari</blockquote>
+    <h2>Asiat joista tykkään</h2>
+    <ol class="pseudo-list2">
+      <li>1. Video pelit</li>
+      <li>2. Moottoriurheilu</li>
+      <li>3. Jääkiekko</li>
+    </ol>
+    <h2>Koiran lempi asioita</h2>
+    <ul class="pseudo-list">
+      <li>Lenkkeily</li>
+      <li>Pehmolelun pureminen</li>
+      <li>Ikkunasta ulos katsominen</li>
+    </ul>
+    <a href="https://github.com/jezzze">--->Paras linkki<---</a>
+    <br />
+    <table>
+      <tr>
+        <th>Tämän Hetkisiä kursseja</th>
+        <th>Selitys</th>
+      </tr>
+      <tr>
+        <td>Websivuston kehittäminen,</td>
+        <td>nettisivujen tekemistä</td>
+      </tr>
+      <tr>
+        <td>Professional Communication in English,</td>
+        <td>Englannin kielen oppimista</td>
+      </tr>
+      <tr>
+        <td>Liiketoimintaympäristö,</td>
+        <td>liiketoiminnasta oppimista</td>
+      </tr>
+    </table>
+    <div class="flex-container">
+      <div class="box">hieno laatikko</div> 
+      <div class="box">Hienompi laatikko</div> 
+      <div class="box">Hienoin laatikko</div> 
+    </div>
+
+    <div class="gird-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+    <div class="responsive-box">vaiha sivun kokoa että näkyy muutos</div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <input type="submit" value="submit" />
+    </form>
+    <div class="media-query-box">Muuta sivun kokoa että näet muutoksen</div>
+
+    <div class="responsive-container">
+        <div class="column">muuta sivun kokoa.</div>
+        <div class="column">kuva muuttaa kokoa sopiakseen sivuun.</div>
+    </div>
+    <img src="images/koira.jpeg" alt="responsive image" class="responsive-image">
+
+    <nav class="responsive-nav">
+        <button class="menu-toggle"></button>
+    </nav>
+
+  <footer>
+    <p>Copyright 2025</p>
+  </footer>
+  </body>
 </html>
