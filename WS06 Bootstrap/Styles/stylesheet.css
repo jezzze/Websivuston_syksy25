@@ -15,10 +15,16 @@ td {
 }
 
 th {
-  background-color: rgba(0, 0, 255, 0.284);
+  border: 1px solid #91ff00 !important; 
+  padding: 8px; 
+  text-align: left; 
+  background-color: rgba(0, 0, 255, 0.284) !important;
 }
 td {
-  background-color: rgba(0, 0, 255, 0.284);
+  border: 1px solid #91ff00 !important; 
+  padding: 8px; 
+  text-align: left;
+  background-color: rgba(0, 0, 255, 0.284) !important;
 }
 form {
   display: flex;
@@ -315,4 +321,9 @@ nav ul li:nth-child(even) {
 }.responsive-nav .menu-toggle {
     display: block;
 }
-  
+.navbar {
+  background-color: rgba(62, 118, 124, 0.353);
+}
+.navbar-toggle-icon {
+  filter: invert(1);
+}
