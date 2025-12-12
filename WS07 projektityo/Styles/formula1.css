@@ -7,10 +7,23 @@ body {
     margin: 0;
     padding: 0;
 }
+main {
+    text-align: center; /* laittaa h1 otsikon keskelle */
+}
 h1 {
     color: #E71D36;
     text-align: center;
     padding: 20px;
+    display: inline-block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+}
+h1:hover {
+    color: #FDFEFF;
+    background-color: #E71D36;
+    transform: translateY(-5px) scale(1.05);
+    border-radius: 10px;
 }
 header {
     background-color: #232c23;
@@ -45,13 +58,134 @@ header {
     cursor: pointer;
     transform: rotate(3deg);
 }
+.active-page {
+    background-color: #E71D36 !important;
+    border-color: #FDFEFF !important; 
+}
 footer {
     background-color: #BCCCDC; /*footter vari*/
-    color: #232c33;
+    color: #232c33; /*footter teksti väri*/
     text-align: center;
     padding: 15px 0;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+}
+.info-section { /*info laatikoiden asettelu*/
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.info-box {
+    background-color: #eceeef;
+    border: 1px solid #BCCCDC;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.info-box h2 {
+    color: #E71D36;
+    border-bottom: 2px solid #BCCCDC;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+@media (max-width: 600px) {
+.info-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+.info-box {
+    min-width: 90%;
+    margin: 10px 0;
+}
+.navbar li {
+    display: block;
+    margin: 10px 0;
+    }
+}
+.kuskit-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+.kuski-lista {
+    margin: 20px auto; 
+    max-width: 600px; /*rajoittaa leveyden*/
+    min-width: 0;
+}
+.kuskiLista {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+.kuskiLista li {
+    font-size: 1.1em;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #FDFEFF;
+    border-radius: 5px;
+    cursor: pointer;
+    border-left: 5px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+.kuskiLista li:hover {
+    transform: translateX(5px);
+}
+.kuskiLista li::before {
+    content: attr(data-original-name);
+    display: inline-block;
+}
+.kuskiLista li::after {
+    content: attr(data-team);
+    display: none;
+}
+.kuskiLista li:hover::before {
+    content: " ";
+}
+.kuskiLista li:hover::after {
+    content: attr(data-team);
+    display: inline-block;
+}
+/*muutan listan värin tiimin väriin*/
+.kuskiLista li[data-team="Mclaren"] { border-left-color: #FF8700; }
+.kuskiLista li[data-team="Mclaren"]:hover {
+    background-color: #FF8700;
+    color: #232c23;
+}
+.kuskiLista li[data-team="Red Bull Racing"] { border-left-color: #3671C6; }
+.kuskiLista li[data-team="Red Bull Racing"]:hover {
+    background-color: #3671C6; 
+    color: #FDFEFF; 
+}
+.kuskiLista li[data-team="Mercedes"] { border-left-color: #6CD3BF; }
+.kuskiLista li[data-team="Mercedes"]:hover {
+    background-color: #6CD3BF; 
+    color: #232c23; 
+}
+.kuskiLista li[data-team="Ferrari"] { border-left-color: #E71D36; }
+.kuskiLista li[data-team="Ferrari"]:hover {
+    background-color: #E71D36; 
+    color: #FDFEFF; 
+}
+.kuskiLista li[data-team="Williams"] { border-left-color: #00A3E0; }
+.kuskiLista li[data-team="Williams"]:hover {
+    background-color: #00A3E0; 
+    color: #FDFEFF; 
+}
+.kuskiLista li[data-team="Aston Martin"] { border-left-color: #006F62; }
+.kuskiLista li[data-team="Aston Martin"]:hover {
+    background-color: #006F62; 
+    color: #FDFEFF; 
 }
