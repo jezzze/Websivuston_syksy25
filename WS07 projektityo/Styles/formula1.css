@@ -189,3 +189,20 @@ footer {
     background-color: #006F62; 
     color: #FDFEFF; 
 }
+#moottoriUrheiluKaruselli {/*slideshown kuvien reunoja pyöristän koska se vaa näyttää paremmalta*/
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*varjo*/
+}
+#f1Carousel {
+    max-width: 900px; 
+    margin: 20px auto 40px auto; 
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-inner img {
+    height: auto; 
+    object-fit: cover; 
+}
