@@ -1,171 +1,173 @@
-
-
 body {
-    background-color: #FDFEFF;/*vaalea tausta*/
-    font-family: arial, sans-serif;
-    color: #232c23; /*tumma texti vaalean taustan takii*/
-    margin: 0;
-    padding: 0;
-    
+  background-color: #fdfeff; /*vaalea tausta*/
+  font-family: arial, sans-serif;
+  color: #232c23; /*tumma texti vaalean taustan takii*/
+  margin: 0;
+  padding: 0;
 }
 h1 {
-    color: #E71D36;
-    text-align: center; /*laittaa tekstin keskelle*/
-    padding: 20px;
-    display: inline-block;/*transform ei näköjään toimi ilman tätä*/
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    cursor: pointer;
-    margin-top: 20px;
+  color: #e71d36;
+  text-align: center; /*laittaa tekstin keskelle*/
+  padding: 20px;
+  display: inline-block; /*transform ei näköjään toimi ilman tätä*/
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
 }
-h1:hover {/*pompahdus animaatio*/
-    color: #fdfeff;
-    background-color: #E71D36;
-    transform: translateY(-5px) scale(1.05);
-    border-radius: 10px;
+h1:hover {
+  /*pompahdus animaatio*/
+  color: #fdfeff;
+  background-color: #e71d36;
+  transform: translateY(-5px) scale(1.05);
+  border-radius: 10px;
 }
 main {
-    text-align: center;
+  text-align: center;
 }
 header {
-    background-color: #232c23;
-    padding: 10px 0;
+  background-color: #232c23;
+  padding: 10px 0;
 }
-.navbar {/*navigaatio elementtejä*/
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.navbar {
+  /*navigaatio elementtejä*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 /*navigaatio linkkien ulkonäkö ja animaatio*/
 .navbar a {
-    color: #FDFEFF;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-    font-weight: bold;
-    /*laatikko tyylit*/
-    display: inline-block;
-    background-color: #363e44;
-    border-radius: 10px; /*kulman pyöristys*/
-    border: 2px solid #3A4349; /*pieni reunus*/
-    /*animaatio*/
-    transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
-    transform: rotate(0deg);
+  color: #fdfeff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  font-weight: bold;
+  /*laatikko tyylit*/
+  display: inline-block;
+  background-color: #363e44;
+  border-radius: 10px; /*kulman pyöristys*/
+  border: 2px solid #3a4349; /*pieni reunus*/
+  /*animaatio*/
+  transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  transform: rotate(0deg);
 }
 .navbar a:hover {
-    color: #fdfeff; /*valkoinen teksti*/
-    background-color: #E71D36;
-    border-color: #FDFEFF;
-    cursor: pointer;
-    transform: rotate(3deg);
+  color: #fdfeff; /*valkoinen teksti*/
+  background-color: #e71d36;
+  border-color: #fdfeff;
+  cursor: pointer;
+  transform: rotate(3deg);
 }
 footer {
-    background-color: #BCCCDC; /*footter vari*/
-    color: #232c33;
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-    margin-top: 40px;
+  background-color: #bcccdc; /*footter vari*/
+  color: #232c33;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: 40px;
 }
 .info-section {
-    display: flex; /*flexbox*/
-    justify-content: space-around; /* laittaa laatikot tasasesti vierekkäin*/
-    align-items: flex-start; /*yläreunat kohdistuu*/
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 15px;
-
+  display: flex; /*flexbox*/
+  justify-content: space-around; /* laittaa laatikot tasasesti vierekkäin*/
+  align-items: flex-start; /*yläreunat kohdistuu*/
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 .info-box {
-    background-color: #eceeef;
-    border: 1px solid #BCCCDC;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    flex: 1; /*antaa laatikoiden venyä tasatesti */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
-    transition: transform 0.3s ease-in-out; /*hover effection valmistelu*/
-
+  background-color: #eceeef;
+  border: 1px solid #bcccdc;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1; /*antaa laatikoiden venyä tasatesti */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  transition: transform 0.3s ease-in-out; /*hover effection valmistelu*/
 }
 .info-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
 }
 .info-box h2 {
-    color: #E71D36;
-    border-bottom: 2px solid #BCCCDC;
-    padding-bottom: 10px;
-    margin-top: 0;
+  color: #e71d36;
+  border-bottom: 2px solid #bcccdc;
+  padding-bottom: 10px;
+  margin-top: 0;
 }
 .slideshow-container {
-    max-width: 900px;
-    margin: 40px auto;
-    text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
 }
-@media (max-width: 600px) { /*puhelimelle parannan sivun näyttävyyttä*/
-    .info-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .info-box {
-        min-width: 90%;
-        margin: 10px 0;
-    }
-    .navbar li {
-        display: block;
-        margin: 10px 0;
-    }
+@media (max-width: 600px) {
+  /*puhelimelle parannan sivun näyttävyyttä*/
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .info-box {
+    min-width: 90%;
+    margin: 10px 0;
+  }
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+  }
 }
-#moottoriUrheiluKaruselli {/*slideshown kuvien reunoja pyöristän koska se vaa näyttää paremmalta*/
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*varjo*/
+#moottoriUrheiluKaruselli {
+  /*slideshown kuvien reunoja pyöristän koska se vaa näyttää paremmalta*/
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*varjo*/
 }
-form { /*formin asettelu sivun lopussa*/
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #eceeef;
-    border: 1px solid #BCCCDC;
-    border-radius: 15px;
-    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
-    text-align: left;
+form {
+  /*formin asettelu sivun lopussa*/
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #eceeef;
+  border: 1px solid #bcccdc;
+  border-radius: 15px;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 form label {
-    display: block; /*otsikot menee omille riveille*/
-    margin-bottom: 5px;
-    margin-top: 15px;
-    color: #232c23;
-    font-weight: bold;
+  display: block; /*otsikot menee omille riveille*/
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #232c23;
+  font-weight: bold;
 }
-form input[type="text"], form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #BCCCDC;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease-in-out;
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bcccdc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
 }
-form input[type="text"]:focus, form input[type="email"]:focus {
-    border-color: #E71D36;
-    outline: none;
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  border-color: #e71d36;
+  outline: none;
 }
 form input[type="submit"] {
-    width: 100%;
-    background-color: #E71D36;
-    font-weight: bold;
-    padding: 12px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.1s;
+  width: 100%;
+  background-color: #e71d36;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.1s;
 }
 form input[type="submit"]:hover {
-    background-color: #A91629;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #a91629;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

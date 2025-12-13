@@ -1,90 +1,132 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fi">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/Stylesheet.css">
-     <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="Styles/Stylesheet.css">
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Moottoriurheilu lajit.</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-<nav> <!-- sivujen navigaatio-->
-    <ul class="navbar">
-        <li><a href="formula1.html">Formula1</a></li>
-        <li><a href="motoGP.html">MotoGP</a></li>
-        <li><a href="ralli.html">Ralli</a></li>
-    </ul>
-</nav>
-</header>
+      <nav>
+        <!-- sivujen navigaatio-->
+        <ul class="navbar">
+          <li><a href="formula1.html">Formula1</a></li>
+          <li><a href="motoGP.html">MotoGP</a></li>
+          <li><a href="ralli.html">WRC</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-    <h1>Moottoriurheilu</h1>
+      <h1>Moottoriurheilu</h1>
 
-    <section class="info-section">
+      <section class="info-section">
+        <!--info laatikko-->
         <div class="info-box">
-            <h2>Mikä on Moottoriurheilu?</h2>
-            <p>Moottoriurheilu on yleisnimitys kilpailulajeille, joissa käytetään moottoroituja ajoneuvoja, kuten autoja, moottoripyöriä tai veneitä. Se on äärimmäisen kilpailullinen ja teknologisesti kehittynyt ala, joka vaatii kuljettajilta nopeutta, tarkkuutta ja strategiaa. Lajeja on monia: Formula 1:n nopeudesta Rallin kestävyyteen ja MotoGP:n akrobatiaan. Se on vauhdin, teknologian ja rohkeuden yhdistelmä.</p>
+          <h2>Mikä on Moottoriurheilu?</h2>
+          <p>
+            Moottoriurheilu on yleisnimitys kilpailulajeille, joissa käytetään
+            moottoroituja ajoneuvoja, kuten autoja, moottoripyöriä tai veneitä.
+            Se on äärimmäisen kilpailullinen ja teknologisesti kehittynyt ala,
+            joka vaatii kuljettajilta nopeutta, tarkkuutta ja strategiaa. Lajeja
+            on monia: Formula 1:n nopeudesta Rallin kestävyyteen ja MotoGP:n
+            akrobatiaan. Se on vauhdin, teknologian ja rohkeuden yhdistelmä.
+          </p>
         </div>
         <div class="info-box">
-            <h2>Vauhtia ja teknologiaa</h2>
-            <p>Moottoriurheilu toimii usein kokeilukenttänä autoteollisuuden uusille innovaatioille, kuten aerodynamiikalle, hybriditeknologialle ja materiaalitieteelle. Jokainen laji vaatii omanlaisensa erikoisajoneuvon, jotka on viritetty maksimoimaan suorituskyky tietyssä ympäristössä olipa kyseessä sitten sileä asfaltti tai mutainen soratie.</p>
+          <h2>Vauhtia ja teknologiaa</h2>
+          <p>
+            Moottoriurheilu toimii usein kokeilukenttänä autoteollisuuden
+            uusille innovaatioille, kuten aerodynamiikalle, hybriditeknologialle
+            ja materiaalitieteelle. Jokainen laji vaatii omanlaisensa
+            erikoisajoneuvon, jotka on viritetty maksimoimaan suorituskyky
+            tietyssä ympäristössä olipa kyseessä sitten sileä asfaltti tai
+            mutainen soratie.
+          </p>
         </div>
-    </section>
-</main>
-<section class="slideshow-container">
-<div id="moottoriUrheiluKaruselli" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    
-    <div class="carousel-inner"><!--tässä on slideshow joka näyttää kolme eri kuvaa ja kuvia voi itse vaihtaa painamalla nuoli näppäintä-->
-        <div class="carousel-item active">
-            <img src="images/ferrari f1.jpg" class="d-block w-100" alt="Formula 1 auto">
+      </section>
+    </main>
+    <section class="slideshow-container">
+      <div
+        id="moottoriUrheiluKaruselli"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#moottoriUrheiluKaruselli"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#moottoriUrheiluKaruselli"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#moottoriUrheiluKaruselli"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!--tässä on slideshow joka näyttää kolme eri kuvaa ja kuvia voi itse vaihtaa painamalla nuoli näppäintä-->
+          <div class="carousel-item active">
+            <img src= "images/ferrarif1.jpg" class="d-block w-100" alt="Formula 1 auto">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Formula 1</h5>
-                <p>Huippunopeaa kilpa-ajoa radalla.</p>
+              <h5>Formula 1</h5>
+              <p>Huippunopeaa kilpa-ajoa radalla.</p>
             </div>
-        </div>
-        <div class="carousel-item">
-            <img src="images/ralli.jpg" class="d-block w-100" alt="Ralliauto liukkaalla tiellä">
+          </div>
+          <div class="carousel-item">
+            <img src= "images/ralli.jpg" class="d-block w-100" alt="Ralliauto liukkaalla tiellä">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Ralli</h5>
-                <p>Taitoa ja kestävyyttä vaativissa olosuhteissa.</p>
+              <h5>Ralli</h5>
+              <p>Taitoa ja kestävyyttä vaativissa olosuhteissa.</p>
             </div>
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="images/motogp.jpg" class="d-block w-100" alt="MotoGP moottoripyörä">
             <div class="carousel-caption d-none d-md-block">
-                <h5>MotoGP</h5>
-                <p>Maailman nopein kaksipyöräisten sarja.</p>
+              <h5>MotoGP</h5>
+              <p>Maailman nopein kaksipyöräisten sarja.</p>
             </div>
+          </div>
         </div>
-    </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-   </section>
-   <form>
+        <button class="carousel-control-prev" type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#moottoriUrheiluKaruselli" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <form>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br />
+      <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br />
-      <input type="submit" value="submit" />
+      <input type="email" id="email" name="email"><br>
+      <input type="submit" value="submit">
     </form>
-    <footer>  
-         <p>Copyright 2025 &copy;</p> <!--footteri jossa on copyright logo--> 
+    <footer>
+      <p>Copyright 2025 &copy;</p>
+      <!--footteri jossa on copyright logo-->
     </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

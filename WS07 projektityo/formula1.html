@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/formula1.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/formula1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Formula1</title>
   </head>
   <body>
@@ -19,7 +14,7 @@
         <ul class="navbar">
           <li><a href="index.html">Kotisivu</a></li>
           <li><a href="motoGP.html">MotoGP</a></li>
-          <li><a href="ralli.html">Ralli</a></li>
+          <li><a href="ralli.html">WRC</a></li>
         </ul>
       </nav>
     </header>
@@ -42,8 +37,14 @@
         <h2>Kuljettajien MM-sijoitukset top 10</h2>
         <div class="info-box kuski-lista">
           <ul class="kuskiLista">
-            <li data-team="Mclaren" data-original-name="Lando Norris &#9813"></li>
-            <li data-team="Red Bull Racing" data-original-name="Max Verstappen"></li>
+            <li
+              data-team="Mclaren"
+              data-original-name="Lando Norris &#9813;"
+            ></li>
+            <li
+              data-team="Red Bull Racing"
+              data-original-name="Max Verstappen"
+            ></li>
             <li data-team="Mclaren" data-original-name="Oscar Piastri"></li>
             <li data-team="Mercedes" data-original-name="George Russell"></li>
             <li data-team="Ferrari" data-original-name="Charles Leclerc"></li>
@@ -60,45 +61,72 @@
       </section>
     </main>
     <div id="f1Carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#f1Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#f1Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#f1Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#f1Carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#f1Carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#f1Carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
 
-    <div class="carousel-inner">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/Mercedesf1.jpg" class="d-block w-100" alt="Formula 1 kilpailu">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Vauhdin hurmaa</h5>
-                <p>Formula 1 -autot kiitävät radalla.</p>
-            </div>
+          <img src="images/Mercedesf1.jpg" class="d-block w-100" alt="Formula 1 kilpailu">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vauhdin hurmaa</h5>
+            <p>Formula 1 -autot kiitävät radalla.</p>
+          </div>
         </div>
         <div class="carousel-item">
-            <img src="images/astonF1.jpg" class="d-block w-100" alt="Varikkopysähdys">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Formula auto radalla</h5>
-                <p>Aston Martin f1</p>
-            </div>
+          <img src="images/astonF1.jpg" class="d-block w-100" alt="Varikkopysähdys">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Formula auto radalla</h5>
+            <p>Aston Martin f1</p>
+          </div>
         </div>
         <div class="carousel-item">
-            <img src="Images/red-bullF1.jpg" class="d-block w-100" alt="Palkintopalli">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Max Verstappen</h5>
-                <p>Red Bull Radalla</p>
-            </div>
+          <img src="Images/red-bullF1.jpg" class="d-block w-100" alt="Palkintopalli">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Max Verstappen</h5>
+            <p>Red Bull Radalla</p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#f1Carousel" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#f1Carousel"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#f1Carousel" data-bs-slide="next">
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#f1Carousel"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
-</div>
+      </button>
+    </div>
     <footer>
       <p>Copyright 2025 &copy;</p>
     </footer>
