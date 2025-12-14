@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #FDFEFF;/*vaalea tausta*/
+    background-color: #FDFEFF;
     font-family: arial, sans-serif;
     color: #232c23; /*tumma texti vaalean taustan takii*/
     margin: 0;
@@ -22,7 +22,6 @@ header {
     padding: 0;
     text-align: center;
 }
-/*navigaatio linkkien ulkonäkö ja animaatio*/
 .navbar a {
     color: #FDFEFF;
     text-decoration: none;
@@ -46,12 +45,130 @@ header {
     transform: rotate(3deg);
 }
 footer {
-    background-color: #BCCCDC; /*footter vari*/
+    background-color: #BCCCDC; /*footter väri*/
     color: #232c33;
     text-align: center;
     padding: 15px 0;
     margin-top: 50px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+}
+#motoGPCarousel {
+    max-width: 900px; 
+    margin: 20px auto 40px auto;
+    border-radius: 15px;
+     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.carousel-caption {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.kuskiLista li[data-team*="Ducati"] { border-left-color: #CC0000; }
+.kuskiLista li[data-team*="Ducati"]:hover {
+    background-color: #CC0000;
+    color: #FDFEFF;
+}
+.kuskiLista li[data-team*="KTM"] { border-left-color: #F26722; }
+.kuskiLista li[data-team*="KTM"]:hover {
+    background-color: #F26722;
+    color: #232c23; 
+}
+.kuskiLista li[data-team*="Aprilia"] { border-left-color: #A30000; }
+.kuskiLista li[data-team*="Aprilia"]:hover {
+    background-color: #A30000;
+    color: #FDFEFF;
+}
+.kuskiLista li[data-team*="Yamaha"] { border-left-color: #00A3D9; }
+.kuskiLista li[data-team*="Yamaha"]:hover {
+    background-color: #00A3D9;
+    color: #FDFEFF;
+}
+.kuskiLista li[data-team*="Honda"] { border-left-color: #FF0000; }
+.kuskiLista li[data-team*="Honda"]:hover {
+    background-color: #FF0000;
+    color: #FDFEFF;
+}
+main {
+    text-align: center;
+}
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.info-box {
+    background-color: #eceeef;
+    border: 1px solid #BCCCDC;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s;
+}
+.info-box:hover {
+    transform: translateY(-5px) skewX(-1deg);/*kallistus*/
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.info-box h2 {
+    color: #E71D36;
+    border-bottom: none;
+    border-left: 5px solid #E71D36;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+.kuskit-section {
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 15px;
+    text-align: center;
+}
+.kuski-lista {
+    margin: 20px auto;
+    max-width: 600px;
+    min-width: 0;
+}
+.kuskiLista {
+list-style-type: decimal; 
+padding-left: 20px;
+text-align: left;
+}
+.kuskiLista li {
+font-size: 1.1em;
+padding: 8px;
+margin-bottom: 8px;
+background-color: #FDFEFF;
+border-radius: 5px;
+cursor: pointer;
+border-left: 5px solid #ccc;
+transition: all 2s cubic-bezier(0.6, 0.04, 0.98, 0.33); 
+}
+.kuskiLista li:hover {
+    transform: translateX(1500px) translateY(50px) rotate(5deg); 
+    background-color: #E71D36;
+    color: #FDFEFF;
+    box-shadow: none;
+}
+.kuskiLista li::before {
+    content: attr(data-original-name);
+    display: inline-block;
+}
+
+.kuskiLista li::after {/*piilottaa tallien nimet oletuksena*/
+    content: attr(data-team);
+    display: none;
+}
+
+/* säätää hover tilaa */
+.kuskiLista li:hover::before {
+    content: "Karkuun lähti! Tallina oli:";
+}
+.kuskiLista li:hover::after {
+    content: attr(data-team);
+    margin-left: 5px; /* pakotan välin tekstiin */
+    display: inline-block;
 }
